@@ -83,6 +83,31 @@ The output should then transformed into this:
 
 For full color reference check out: [Chalk](https://www.npmjs.com/package/chalk) 
 
+### Output raw content
+
+I case you like to work with the raw formatted content.
+
+```javascript
+const path = require('path');
+const fs = require('fs');
+const chalk = require('chalk');
+
+const markshell = require('markshell');
+
+const pathToFile = path.join(__dirname,
+    'path to my markdown file'
+);
+
+if (fs.existsSync(pathToFile)) {
+
+    // Get the formatted content
+   var formattedContent = markshell.toRawConsole(pathToFile);
+
+   ...
+
+};
+```
+
 Have fun using it!!! 🖤🖤🖤
 
 [markshell]: https://n8d.at/wp-content/uploads/2020/06/console-output.png

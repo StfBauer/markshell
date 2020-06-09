@@ -35,7 +35,7 @@
     "type": "git",
     "url": "git+https://github.com/stfbauer/markshell.git"
   },
-  "devDependencies": {
+  "dependencies": {
     "chalk": "^4.0.0"
   }
 }

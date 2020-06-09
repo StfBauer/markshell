@@ -43,4 +43,9 @@ if (fs.existsSync(pathToFile)) {
     // print markdown file
     markshell.toConsole(pathToFile);
 
+    // print markdown file
+    var output = markshell.toRawContent(pathToFile);
+
+    console.log(output);
+
 };
