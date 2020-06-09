@@ -1,6 +1,6 @@
 {
   "name": "markshell",
-  "version": "0.0.1",
+  "version": "0.0.2-alpha1",
   "description": "markshell allows you to output any markdown file formatted and style to the console",
   "keywords": [
     "markdown",
