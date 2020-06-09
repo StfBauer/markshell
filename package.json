@@ -1,12 +1,7 @@
 {
   "name": "markshell",
-  "version": "0.0.1-beta1",
+  "version": "0.0.0",
   "description": "markshell allows you to output any markdown file formatted and style to the console",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "node test/index.js",
-    "testRun": "node ./lib/index.js"
-  },
   "keywords": [
     "markdown",
     "shell",
@@ -20,9 +15,26 @@
     "shell extension",
     "CLI development"
   ],
+  "main": "lib/index.js",
+  "lib": "lib/index.js",
+  "homepage": "https://github.com/stfbauer/markshell#readme",
+  "scripts": {
+    "test": "node test/index.js",
+    "testRun": "node ./lib/index.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "bugs": {
+    "url" : "https://github.com/stfbauer/markshell/issues"
+  },
   "author": "Stefan Bauer",
   "license": "MIT",
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stfbauer/markshell.git"
+  },
   "devDependencies": {
     "chalk": "^4.0.0"
   }
