@@ -5,4 +5,4 @@ Markshell let you output any [Markdown](https://github.com/adam-p/markdown-here/
 ![Sample Console Output][logo]
 
 
-[logo]:
+[logo]: https://github.com/StfBauer/markshell/blob/77bc72ee33137499705ee365242351377ca284b4/assets/console-output.png
