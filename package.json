@@ -1,6 +1,6 @@
 {
   "name": "markshell",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "markshell allows you to output any markdown file formatted and style to the console",
   "keywords": [
     "markdown",
@@ -26,7 +26,7 @@
     "lib"
   ],
   "bugs": {
-    "url" : "https://github.com/stfbauer/markshell/issues"
+    "url": "https://github.com/stfbauer/markshell/issues"
   },
   "author": "Stefan Bauer",
   "license": "MIT",
