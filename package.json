@@ -1,14 +1,27 @@
 {
   "name": "markshell",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1-beta1",
+  "description": "markshell allows you to output any markdown file formatted and style to the console",
   "main": "lib/index.js",
   "scripts": {
     "test": "node test/index.js",
     "testRun": "node ./lib/index.js"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "markdown",
+    "shell",
+    "nodejs",
+    "chalk",
+    "CLI",
+    "CLI addons",
+    "node",
+    "console",
+    "output",
+    "shell extension",
+    "CLI development"
+  ],
+  "author": "Stefan Bauer",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "chalk": "^4.0.0"

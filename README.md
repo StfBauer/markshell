@@ -81,10 +81,7 @@ The output should then transformed into this:
 
 ![Themed markshell output][themed-markshell]
 
-
-
-
-
+Have fun using it!!! 🖤🖤🖤
 
 [markshell]: https://github.com/StfBauer/markshell/blob/77bc72ee33137499705ee365242351377ca284b4/assets/console-output.png
 [themed-markshell]: https://github.com/StfBauer/markshell/blob/54f7062744aeaefd018ce5928d458a71a6158f87/assets/themed-console-output.png
