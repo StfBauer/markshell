@@ -105,3 +105,4 @@ dist
 
 # Remove npm rc
 .npmrc
+.DS_Store
