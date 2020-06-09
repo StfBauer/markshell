@@ -86,4 +86,4 @@ For full color reference check out: [Chalk](https://www.npmjs.com/package/chalk)
 Have fun using it!!! 🖤🖤🖤
 
 [markshell]: https://n8d.at/wp-content/uploads/2020/06/console-output.png
-[themed-markshell]: https://n8d.at/wp-content/uploads/2020/06/
+[themed-markshell]: https://n8d.at/wp-content/uploads/2020/06/themed-console-output.png
