@@ -81,6 +81,8 @@ The output should then transformed into this:
 
 ![Themed markshell output][themed-markshell]
 
+For full color reference check out: [Chalk](https://www.npmjs.com/package/chalk) 
+
 Have fun using it!!! 🖤🖤🖤
 
 [markshell]: https://github.com/StfBauer/markshell/blob/77bc72ee33137499705ee365242351377ca284b4/assets/console-output.png
