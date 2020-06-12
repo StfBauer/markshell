@@ -7,11 +7,13 @@ const markshell = require(process.cwd() + '/lib/index');
 // get default theme
 var theme =  markshell.getTheme();
 
+console.log(Object.keys(theme));
+
 // define headline format
-theme.headline = chalk.bold.keyword('yellow'),
+theme.headline = chalk.bold.keyword('yellow');
 
 // define bold text layout
-theme.bold = chalk.magenta,
+// theme.bold = chalk.bold.keyword('white');
 
 // define italic text
 theme.italic = chalk.italic.green;
@@ -20,7 +22,7 @@ theme.italic = chalk.italic.green;
 theme.strikethrough = chalk.strikethrough.redBright;
 
 // define code output
-theme.code = chalk.bold.whiteBright,
+theme.code = chalk.bold.whiteBright;
 
 // define inline code output
 theme.inlineCode = chalk.bold.keyword('lightblue'),
