@@ -2,6 +2,8 @@
 
 Markshell let you output any [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) file to the console. This tool also includes theming support to change the out put to your favorite colors.
 
+Syntax hightlighting support for source code on the console is provided base on [PrismJS](https://prismjs.com)
+
 The output on the console then looks like this:
 
 ![Sample Console Output][markshell]
