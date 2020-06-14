@@ -75,6 +75,10 @@ global.logVerbose = true;
 require('./caller/index');
 ```
 
+1. Numbered List
+1. Numbered List
+1. Numbered List
+1. Numbered List
 
 Should work in every modern browser.
 
@@ -85,3 +89,6 @@ Cras tempus justo non posuere rutrum. Integer vitae purus fringilla, `interdum` 
 #### Markdown Headline 3
 
 Vestibulum laoreet nisl et luctus elementum. Nunc vehicula leo eu nibh consequat, in facilisis tellus rutrum.
+
+✱ hello world
+
