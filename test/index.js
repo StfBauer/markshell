@@ -7,7 +7,9 @@ const markshell = require(process.cwd() + '/lib/index');
 // get default theme
 var theme =  markshell.getTheme();
 
-console.log(Object.keys(theme));
+// console.log(Object.keys(theme));
+// console.log(theme);
+
 
 // define headline format
 theme.headline = chalk.bold.keyword('yellow');
@@ -29,6 +31,8 @@ theme.inlineCode = chalk.bold.keyword('lightblue'),
 
 // define blockquote style
 theme.blockQuote = chalk.bold.keyword('pink');
+
+console.log(theme.sourceCodeTheme);
 
 const pathToFile = path.join(__dirname,
     '../samples/test.md'

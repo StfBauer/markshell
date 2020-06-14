@@ -2,6 +2,13 @@
 
 Lorem ipsum **dolor sit amet (Should be just bold)**, consectetur adipiscing elit. Morbi faucibus vel mi quis fringilla. Mauris sed sapien erat. Vivamus neque mauris, ornare [id quam](https://n8d.at) vitae, ultricies dignissim lectus. Phasellus pulvinar magna sed odio iaculis dignissim.
 
+Argument 1
+: definition list
+: another definition
+
+Argument 2
+: I don't have any arguments now
+
 ## Markdown Headline 2
 
 Donec eget ~~porttitor odio STRIKE THROUGH~~, nec *porta quam* or `inline code`.
