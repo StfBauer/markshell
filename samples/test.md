@@ -1,18 +1,6 @@
 # Markdown Headline 1
 
-Lorem ipsum **dolor sit amet (Should be just bold)**, consectetur adipiscing elit. Morbi faucibus vel mi quis fringilla. Mauris sed sapien erat. Vivamus neque mauris, ornare [id quam](https://n8d.at) vitae, ultricies dignissim lectus. Phasellus pulvinar magna sed odio iaculis dignissim.
-
-## Markdown Headline 2
-
-Donec eget ~~porttitor odio STRIKE THROUGH~~, nec *porta quam* or `inline code`.
-
-> dapibus interdum in ac quam. Aliquam efficitur justo a diam varius interdum. Sed elementum porta erat vitae fermentum. Pellentesque eu odio gravida, luctus tortor
-
-and now some sample code:
-
-```javascript
-console.log('hello world');
-```
+This is just a sample SCSS output:
 
 ```scss
 @import url(https://fonts.googleapis.com/css?family=Questrial);
@@ -45,71 +33,4 @@ footer p {
 
 ```
 
-Another style
-
-
-```powershell
-C:\PS>Get-ADUser -Filter 'Name -like "*SvcAccount"' | FT Name,SamAccountName -A
-
-
-Name             SamAccountName
-----             --------------
-SQL01 SvcAccount SQL01
-SQL02 SvcAccount SQL02
-IIS01 SvcAccount IIS01
-```
-
-Argument 1
-: definition list
-: another definition
-
-Argument 2
-: I don't have any arguments now
-
-```bash
-#!/usr/bin/env node
-
-global.log = require('./lib/logger');
-global.logVerbose = true;
-
-require('./caller/index');
-```
-
-1. Numbered List
-1. Numbered List
-1. Numbered List
-1. Numbered List
-
-Should work in every modern browser.
-
-### Markdown Headline 3
-
-Cras tempus justo non posuere rutrum. Integer vitae purus fringilla, `interdum` libero ut, hendrerit ipsum. Sed consequat, dolor non vulputate elementum, nisi felis ultrices diam, eu finibus ipsum tellus eu lectus.
-
-#### Markdown Headline 3
-
-Vestibulum laoreet nisl et luctus elementum. Nunc vehicula leo eu nibh consequat, in facilisis tellus rutrum.
-
-✱ hello world
-
-```powershell
-#This script creates an inventory of the lists and libraries in a site, similar to what's available in the Site Contents page
-
-$siteUrl = "https://mytenant.sharepoint.com/sites/demo"
-
-$cred = Get-Credential
-Connect-PnPOnline -Url $siteUrl -Credentials $cred
- 
-#the following is required to load the corresponding list templates for each list/library
-$ctx = Get-PnPContext
-$templates = (Get-PnPWeb).ListTemplates
-$ctx.Load($templates)
-$ctx.ExecuteQuery()
- 
-Get-PnPList | select Title, @{label="Url";Expression={$_.RootFolder.ServerRelativeUrl}},`
-              @{label="Type";Expression={$bt=$_.BaseTemplate;$templates |`
-              Where{$_.ListTemplateTypeKind -eq $bt} | foreach{$_.Name}}},`
-              ItemCount, LastItemModifiedDate | Export-Csv .\ListInfo.csv
-```
-
-Have fun...
+That is all.
