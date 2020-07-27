@@ -100,13 +100,13 @@ Error: There is something wrong in the state of Denmark.
 ```
 
 ```shell
-c:\temp> hello -world -userid "abc"
+$ hello -world -userid "abc"
 Hello World abc
 Error: There is something wrong in the state of Denmark.
 ```
 
 ```shell-session
-c:\temp> hello -world -userid "abc"
+$ hello -world -userid "abc"
 Hello World abc
 Error: There is something wrong in the state of Denmark.
 ```
