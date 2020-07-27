@@ -95,6 +95,8 @@ $ spo site list --deleted
 
 ```console
 c:\temp> hello -world -userid "abc"
+Hello World abc
+Error: There is something wrong in the state of Denmark.
 ```
 
 # Definiton list
