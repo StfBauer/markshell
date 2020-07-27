@@ -1,5 +1,35 @@
 # spo site list
 
+```ts
+interface User {
+  id: number
+  firstName: string
+  lastName: string
+  role: string
+}
+
+function updateUser(id: number, update: Partial<User>) {
+  const user = getUser(id)
+  const newUser = {...user, ...update}  
+  saveUser(id, user)
+}
+```
+
+```typescript
+interface User {
+  id: number
+  firstName: string
+  lastName: string
+  role: string
+}
+
+function updateUser(id: number, update: Partial<User>) {
+  const user = getUser(id)
+  const newUser = {...user, ...update}  
+  saveUser(id, user)
+}
+```
+
 Lists modern sites of the given type
 
 ## Usage
