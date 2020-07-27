@@ -93,6 +93,15 @@ List all deleted sites in the tenant you're logged in to
 spo site list --deleted
 ```
 
+# Definiton list
+
+First Term
+: This is the definition of the first term.
+
+Second Term
+: This is one definition of the second term.
+: This is another definition of the second term.
+
 # Markdown Headline 1
 
 This is just a sample SCSS output:
