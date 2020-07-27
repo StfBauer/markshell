@@ -100,6 +100,13 @@ Error: There is something wrong in the state of Denmark.
 > Console test
 ```
 
+```sh
+c:\temp> hello -world -userid "abc"
+Hello World abc
+Error: There is something wrong in the state of Denmark.
+> Console test
+```
+
 ```shell
 $ hello -world -userid "abc"
 > hello -world -userid "abc"
