@@ -104,21 +104,28 @@ Error: There is something wrong in the state of Denmark.
 $ hello -world -userid "abc"
 Hello World abc
 Error: There is something wrong in the state of Denmark.
-> Console shell test
+> shell test
 ```
 
 ```bash
 $ hello -world -userid "abc"
 Hello World abc
 Error: There is something wrong in the state of Denmark.
-> Console bash test
+> bash test
+```
+
+```bash session
+$ hello -world -userid "abc"
+Hello World abc
+Error: There is something wrong in the state of Denmark.
+> bash test
 ```
 
 ```shell-session
 $ hello -world -userid "abc"
 Hello World abc
 Error: There is something wrong in the state of Denmark.
-> Console shell-session
+> shell-session
 ```
 
 
