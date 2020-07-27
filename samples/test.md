@@ -34,7 +34,7 @@ Lists modern sites of the given type
 
 ## Usage
 
-```shell
+```sh
 spo site list [options]
 ```
 
@@ -65,31 +65,31 @@ When using the text output type (default), the command lists only the values of 
 
 List all modern team sites in the currently connected tenant
 
-```shell
+```sh
 spo site list
 ```
 
 List all modern team sites in the currently connected tenant
 
-```shell
+```sh
 spo site list --type TeamSite
 ```
 
 List all modern communication sites in the currently connected tenant
 
-```shell
+```sh
 spo site list --type CommunicationSite
 ```
 
 List all modern team sites that contain _project_ in the URL
 
-```shell
+```sh
 spo site list --type TeamSite --filter "Url -like 'project'"
 ```
 
 List all deleted sites in the tenant you're logged in to
 
-```shell
+```sh
 spo site list --deleted
 ```
 
