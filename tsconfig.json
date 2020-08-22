@@ -8,11 +8,11 @@
     "checkJs": true,
     "noEmit": false,
     "declaration": true,
-    "strict": true,
+    "strict": false,
     "noImplicitThis": true,
     "alwaysStrict": true,
     "types": ["node", "prismjs"],
     "esModuleInterop": true
   },
-  "include": ["test", "lib"]
+  "include": ["lib"]
 }

@@ -2,10 +2,10 @@ export type sourceTheme = string;
 /**
  *
  * @param {string} source
- * @param {Prism.Languages} language
+ * @param {string} language
  * @param {sourceTheme} outTheme
  */
-declare function _highlight(source: string, language: Prism.Languages, outTheme: sourceTheme): string;
+declare function _highlight(source: string, language: string, outTheme: sourceTheme): string;
 export namespace sourceTheme {
     const COY: string;
     const DARK: string;
