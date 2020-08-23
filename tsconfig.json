@@ -11,6 +11,7 @@
     "strict": false,
     "noImplicitThis": true,
     "alwaysStrict": true,
+    "emitDeclarationOnly": true,
     "types": ["node", "prismjs"],
     "esModuleInterop": true
   },
