@@ -53,13 +53,24 @@ if (fs.existsSync(pathToFile)) {
     markshell.toConsole(pathToFile);
     var moses = markshell.toRawContent(pathToFile);
 
-    moses
+};
 
 
+const pathToFile2 = path.join(__dirname,
+    '../samples/sample.md'
+);
 
-    // // print markdown file
-    // var output = markshell.toRawContent(pathToFile);
+console.log('Trying to get file :::', pathToFile2);
+console.log('');
+// console.log(theme.availableSourceThemes);
 
-    // console.log(output);
+if (fs.existsSync(pathToFile2)) {
+
+    // set the output theme
+    markshell.setTheme(theme);
+
+    // print markdown file
+    markshell.toConsole(pathToFile);
+    var moses = markshell.toRawContent(pathToFile);
 
 };
