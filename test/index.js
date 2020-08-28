@@ -36,24 +36,24 @@ var theme =  markshell.getTheme();
 
 // console.log(theme.sourceCodeTheme);
 
-const pathToFile = path.join(__dirname,
-    '../samples/test.md'
-);
+// const pathToFile = path.join(__dirname,
+//     '../samples/test.md'
+// );
 
-console.log('Trying to get file :::', pathToFile);
-console.log('');
-// console.log(theme.availableSourceThemes);
+// console.log('Trying to get file :::', pathToFile);
+// console.log('');
+// // console.log(theme.availableSourceThemes);
 
-if (fs.existsSync(pathToFile)) {
+// if (fs.existsSync(pathToFile)) {
 
-    // set the output theme
-    markshell.setTheme(theme);
+//     // set the output theme
+//     markshell.setTheme(theme);
 
-    // print markdown file
-    markshell.toConsole(pathToFile);
-    var moses = markshell.toRawContent(pathToFile);
+//     // print markdown file
+//     markshell.toConsole(pathToFile);
+//     var moses = markshell.toRawContent(pathToFile);
 
-};
+// };
 
 
 const pathToFile2 = path.join(__dirname,
@@ -70,7 +70,7 @@ if (fs.existsSync(pathToFile2)) {
     markshell.setTheme(theme);
 
     // print markdown file
-    markshell.toConsole(pathToFile);
-    var moses = markshell.toRawContent(pathToFile);
+    markshell.toConsole(pathToFile2);
+    var moses = markshell.toRawContent(pathToFile2);
 
 };
