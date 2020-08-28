@@ -71,6 +71,6 @@ if (fs.existsSync(pathToFile2)) {
 
     // print markdown file
     markshell.toConsole(pathToFile2);
-    var moses = markshell.toRawContent(pathToFile2);
+    // var moses = markshell.toRawContent(pathToFile2);
 
 };

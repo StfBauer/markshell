@@ -25,7 +25,6 @@ spo site add [options]
 
 `-u, --url [url]`
 : Site URL  (applies to type CommunicationSite, ClassicSite)
-: Site URL  (applies to type CommunicationSite, ClassicSite)
 
 `-z, --timeZone [timeZone]`
 : Integer representing time zone to use for the site (applies to type ClassicSite)
