@@ -53,6 +53,7 @@ spo site add [options]
 
 `--allowFileSharingForGuestUsers`
 : (deprecated. Use `shareByEmailEnabled` instead) Determines whether it's allowed to share file with guests (applies to type CommunicationSite)
+: (deprecated. Use `shareByEmailEnabled` instead) Determines whether it's allowed to share file with guests (applies to type CommunicationSite)
 
 `--shareByEmailEnabled`
 : Determines whether it's allowed to share file with guests (applies to type CommunicationSite)
@@ -195,3 +196,5 @@ spo site add --type ClassicSite --url https://contoso.sharepoint.com/sites/team 
 ## More information
 
 - Creating SharePoint Communication Site using REST: [https://docs.microsoft.com/en-us/sharepoint/dev/apis/communication-site-creation-rest](https://docs.microsoft.com/en-us/sharepoint/dev/apis/communication-site-creation-rest)
+
+
