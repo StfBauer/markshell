@@ -66,13 +66,13 @@ When using the text output type (default), the command lists only the values of 
 
 List all modern team sites in the currently connected tenant
 
-```shell-session
+```shell
 $ spo site list
 ```
 
 List all modern team sites in the currently connected tenant
 
-```shell-session
+```command
 $ spo site list --type TeamSite
 ```
 
@@ -137,6 +137,10 @@ Error: There is something wrong in the state of Denmark.
 > shell-session
 ```
 
+```powershell
+Get-CimInstance -Class Win32_LogicalDisk |
+  ForEach-Object -Process {($_.FreeSpace)/1MB}
+```
 
 # Definiton list
 

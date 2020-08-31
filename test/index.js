@@ -15,46 +15,44 @@ console.log(theme);
 theme.indents.definitionList = 10;
 
 // define headline format
-// theme.headline = chalk.bold.keyword('lime');
+theme.headline = chalk.bold.keyword('lime');
 
-// // define bold text layout
-// // theme.bold = chalk.bold.keyword('white');
+// define bold text layout
+theme.bold = chalk.bold.keyword('white');
 
-// // define italic text
-// theme.italic = chalk.italic.green;
+// define italic text
+theme.italic = chalk.italic.green;
 
-// // define strikethrough style
-// theme.strikethrough = chalk.strikethrough.redBright;
+// define strikethrough style
+theme.strikethrough = chalk.strikethrough.redBright;
 
-// // define code output
-// theme.code = chalk.bold.whiteBright;
+// define code output
+theme.code = chalk.bold.whiteBright;
 
-// // define inline code output
-// theme.inlineCode = chalk.bold.keyword('lightblue'),
+// define inline code output
+theme.inlineCode = chalk.bold.keyword('lightblue'),
 
-// // define blockquote style
-// theme.blockQuote = chalk.bold.keyword('pink');
+// define blockquote style
+theme.blockQuote = chalk.bold.keyword('pink');
 
-// console.log(theme.sourceCodeTheme);
+const pathToFile = path.join(__dirname,
+    '../samples/test.md'
+);
 
-// const pathToFile = path.join(__dirname,
-//     '../samples/test.md'
-// );
+console.log('Trying to get file :::', pathToFile);
+console.log('');
+// console.log(theme.availableSourceThemes);
 
-// console.log('Trying to get file :::', pathToFile);
-// console.log('');
-// // console.log(theme.availableSourceThemes);
+if (fs.existsSync(pathToFile)) {
 
-// if (fs.existsSync(pathToFile)) {
+    // set the output theme
+    markshell.setTheme(theme);
 
-//     // set the output theme
-//     markshell.setTheme(theme);
+    // print markdown file
+    markshell.toConsole(pathToFile);
+    var moses = markshell.toRawContent(pathToFile);
 
-//     // print markdown file
-//     markshell.toConsole(pathToFile);
-//     var moses = markshell.toRawContent(pathToFile);
-
-// };
+};
 
 
 const pathToFile2 = path.join(__dirname,
