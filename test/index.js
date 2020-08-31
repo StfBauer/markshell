@@ -9,9 +9,10 @@ var theme =  markshell.getTheme();
 // theme.sourceCodeTheme = theme.availableSourceThemes.TOMORROW;
 // console.log(theme.allThemes);
 
-console.log(Object.keys(theme));
-// console.log(theme);
+// console.log(Object.keys(theme));
+console.log(theme);
 
+theme.indents.definitionList = 10;
 
 // define headline format
 // theme.headline = chalk.bold.keyword('lime');

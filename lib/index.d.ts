@@ -21,6 +21,10 @@ declare function _getTheme(): {
         TOMORROW: string;
         TWILIGHT: string;
     };
+    indents: {
+        blockquote: number;
+        definitionList: number;
+    };
 };
 /**
  * Define a custom theme for the output

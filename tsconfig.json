@@ -15,5 +15,8 @@
     "types": ["node", "prismjs"],
     "esModuleInterop": true
   },
-  "include": ["lib"]
+  "exclude": [
+    "./lib/**/*.d.ts",
+    "./lib/**/index.d.ts"
+  ]
 }

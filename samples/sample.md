@@ -1,15 +1,11 @@
-**bold**
-_italic_
-~~strike through~~
+# spo site list
 
-# spo site add
-
-Creates new SharePoint Online site
+Lists modern sites of the given type
 
 ## Usage
 
 ```sh
-spo site add [options]
+spo site list [options]
 ```
 
 ## Options
@@ -18,69 +14,13 @@ spo site add [options]
 : output usage information
 
 `--type [type]`
-: Type of sites to add. Allowed values `TeamSite,CommunicationSite,ClassicSite`, default `TeamSite`
+: type of modern sites to list. Allowed values `TeamSite,CommunicationSite`, default `TeamSite`
 
-`-t, --title <title>`
-: Site title
+`-f, --filter [filter]`
+: filter to apply when retrieving sites
 
-`-a, --alias [alias]`
-: Site alias, used in the URL and in the team site group e-mail (applies to type TeamSite)
-
-`-u, --url [url]`
-: Site URL  (applies to type CommunicationSite, ClassicSite)
-: Site URL  (applies to type CommunicationSite, ClassicSite)
-
-`-z, --timeZone [timeZone]`
-: Integer representing time zone to use for the site (applies to type ClassicSite)
-
-`-d, --description [description]`
-: Site description
-
-`-l, --lcid [lcid]`
-: Site language in the LCID format, eg. _1033_ for _en-US_. See [SharePoint documentation](https://support.microsoft.com/en-us/office/languages-supported-by-sharepoint-dfbf3652-2902-4809-be21-9080b6512fff) for the list of supported languages
-
-`--owners [owners]`
-: Comma-separated list of users to set as site owners (applies to type TeamSite, ClassicSite)
-
-`--isPublic`
-: Determines if the associated group is public or not (applies to type TeamSite)
-
-`-c, --classification [classification]`
-: Site classification (applies to type TeamSite, CommunicationSite)
-
-`--siteDesign [siteDesign]`
-: Type of communication site to create. Allowed values `Topic,Showcase,Blank`, default `Topic`. When creating a communication site, specify either `siteDesign` or `siteDesignId` (applies to type CommunicationSite)
-
-`--siteDesignId [siteDesignId]`
-: Id of the custom site design to use to create the site. When creating a communication site, specify either `siteDesign` or `siteDesignId` (applies to type CommunicationSite)
-
-`--allowFileSharingForGuestUsers`
-: (deprecated. Use `shareByEmailEnabled` instead) Determines whether it's allowed to share file with guests (applies to type CommunicationSite)
-: (deprecated. Use `shareByEmailEnabled` instead) Determines whether it's allowed to share file with guests (applies to type CommunicationSite)
-
-`--shareByEmailEnabled`
-: Determines whether it's allowed to share file with guests (applies to type CommunicationSite)
-
-`-w, --webTemplate [webTemplate]`
-: Template to use for creating the site. Default `STS#0`  (applies to type ClassicSite)
-
-`--resourceQuota [resourceQuota]`
-: The quota for this site collection in Sandboxed Solutions units. Default `0`  (applies to type ClassicSite)
-
-`--resourceQuotaWarningLevel [resourceQuotaWarningLevel]`
-: The warning level for the resource quota. Default `0`  (applies to type ClassicSite)
-
-`--storageQuota [storageQuota]`
-: The storage quota for this site collection in megabytes. Default `100`  (applies to type ClassicSite)
-
-`--storageQuotaWarningLevel [storageQuotaWarningLevel]`
-: The warning level for the storage quota in megabytes. Default `100`  (applies to type ClassicSite)
-
-`--removeDeletedSite`
-: Set, to remove existing deleted site with the same URL from the Recycle Bin  (applies to type ClassicSite)
-
-`--wait`
-: Wait for the site to be provisioned before completing the command  (applies to type ClassicSite)
+`--deleted`
+: use this switch to only return deleted sites
 
 `--query [query]`
 : JMESPath query string. See [http://jmespath.org/](http://jmespath.org/) for more information and examples
@@ -94,110 +34,67 @@ spo site add [options]
 `--debug`
 : Runs command with debug logging
 
-## Remarks for classic sites
+`--help`
+: output usage information
 
-Using the `-z, --timeZone` option you have to specify the time zone of the site. For more information about the valid values see [https://msdn.microsoft.com/library/microsoft.sharepoint.spregionalsettings.timezones.aspx](https://msdn.microsoft.com/library/microsoft.sharepoint.spregionalsettings.timezones.aspx).
+`--type [type]`
+: type of modern sites to list. Allowed values `TeamSite,CommunicationSite`, default `TeamSite`
 
-The value of the `--resourceQuota` option must not exceed the company's aggregate available Sandboxed Solutions quota. For more information, see Resource Usage Limits on Sandboxed Solutions in SharePoint 2010: [http://msdn.microsoft.com/en-us/library/gg615462.aspx](http://msdn.microsoft.com/en-us/library/gg615462.aspx).
+`-f, --filter [filter]`
+: filter to apply when retrieving sites
 
-The value of the `--resourceQuotaWarningLevel` option must not exceed the value of the `--resourceQuota` option.
+`--deleted`
+: use this switch to only return deleted sites
 
-The value of the `--storageQuota` option must not exceed the company's available quota.
+`--query [query]`
+: JMESPath query string. See [http://jmespath.org/](http://jmespath.org/) for more information and examples
 
-The value of the `--storageQuotaWarningLevel` option must not exceed the the value of the `--storageQuota` option.
+`-o, --output [output]`
+: Output type. `json,text`. Default `text`
 
-If you try to create a site with the same URL as a site that has been previously moved to the recycle bin, you will get an error. To avoid this error, you can use the `--removeDeletedSite` option. Prior to creating the site, the spo site classic add command will check if the site with the specified URL has been previously moved to the recycle bin and if so, will remove it. Because removing sites from the recycle bin might take a moment, it should be used in conjunction with the `--wait` option so that the new site is not created before the old site is fully removed.
+`--verbose`
+: Runs command with verbose logging
 
-Deleting and creating classic site collections is by default asynchronous and depending on the current state of Office 365, might take up to few minutes. If you're building a script with steps that require the site to be fully provisioned, you should use the `--wait` flag. When using this flag, the spo site classic add command will keep running until it received confirmation from Office 365 that the site has been fully provisioned.
+`--debug`
+: Runs command with debug logging
 
-## Remarks for modern sites
+!!! important
+    To use this command you have to have permissions to access the tenant admin site.
 
-The `--owners` option is mandatory for creating `CommunicationSite` sites with app-only permissions.
+## Remarks
 
-When trying to create a team site using app-only permissions, you will get an _Insufficient privileges to complete the operation._ error. As a workaround, you can use the [`aad o365group add`](../../aad/o365group/o365group-add.md) command, followed by [`spo site set`](./site-set.md) to further configure the Team site.
+Using the `-f, --filter` option you can specify which sites you want to retrieve. For example, to get sites with _project_ in their URL, use `Url -like 'project'` as the filter.
+
+When using the text output type (default), the command lists only the values of the `Title`, and `Url` properties of the site. When setting the output type to JSON, all available properties are included in the command output.
 
 ## Examples
 
-Create modern team site with private group
+List all modern team sites in the currently connected tenant
 
-```sh
-spo site add --alias team1 --title 'Team 1'
+```command
+spo site list
 ```
 
-Create modern team site with description and classification
+List all modern team sites in the currently connected tenant
 
 ```sh
-spo site add --type TeamSite --alias 'team1' --title 'Team 1' --description 'Site of team 1' --classification 'LBI'
+spo site list --type TeamSite
 ```
 
-Create modern team site with public group
+List all modern communication sites in the currently connected tenant
 
 ```sh
-spo site add --type TeamSite --alias team1 --title Team 1 --isPublic
+spo site list --type CommunicationSite
 ```
 
-Create modern team site using the Dutch language
+List all modern team sites that contain _project_ in the URL
 
 ```sh
-spo site add --alias team1 --title Team 1 --lcid 1043
+spo site list --type TeamSite --filter "Url -like 'project'"
 ```
 
-Create modern team site with the specified users as owners
+List all deleted sites in the tenant you're logged in to
 
 ```sh
-spo site add --alias team1 --title Team 1 --owners "steve@contoso.com, bob@contoso.com"
+spo site list --deleted
 ```
-
-Create communication site using the Topic design
-
-```sh
-spo site add --type CommunicationSite --url "https://contoso.sharepoint.com/sites/marketing" --title Marketing
-```
-
-Create communication site using app-only permissions
-
-```sh
-spo site add --type CommunicationSite --url https://contoso.sharepoint.com/sites/marketing --title Marketing --owners "john.smith@contoso.com"
-```
-
-Create communication site using the Showcase design
-
-```sh
-spo site add --type CommunicationSite --url https://contoso.sharepoint.com/sites/marketing --title Marketing --siteDesign Showcase
-```
-
-Create communication site using a custom site design
-
-```sh
-spo site add --type CommunicationSite --url https://contoso.sharepoint.com/sites/marketing --title Marketing --siteDesignId 99f410fe-dd79-4b9d-8531-f2270c9c621c
-```
-
-Create communication site using the Blank design with description and classification
-
-```sh
-spo site add --type CommunicationSite --url https://contoso.sharepoint.com/sites/marketing --title Marketing --description Site of the marketing department --classification MBI --siteDesign Blank
-```
-
-Create new classic site collection using the Team site template. Set time zone to `UTC+01:00`. Don't wait for the site provisioning to complete
-
-```sh
-spo site add --type ClassicSite --url https://contoso.sharepoint.com/sites/team --title Team --owners admin@contoso.onmicrosoft.com --timeZone 4
-```
-
-Create new classic site collection using the Team site template. Set time zone to `UTC+01:00`. Wait for the site provisioning to complete
-
-```sh
-spo site add --type ClassicSite --url https://contoso.sharepoint.com/sites/team --title Team --owners admin@contoso.onmicrosoft.com --timeZone 4 --webTemplate STS#0 --wait
-```
-
-Create new classic site collection using the Team site template. Set time zone to `UTC+01:00`. If a site with the same URL is in the recycle bin, delete it. Wait for the site provisioning to complete
-
-```sh
-spo site add --type ClassicSite --url https://contoso.sharepoint.com/sites/team --title Team --owners admin@contoso.onmicrosoft.com --timeZone 4 --webTemplate 'STS#0' --removeDeletedSite --wait
-```
-
-## More information
-
-- Creating SharePoint Communication Site using REST: [https://docs.microsoft.com/en-us/sharepoint/dev/apis/communication-site-creation-rest](https://docs.microsoft.com/en-us/sharepoint/dev/apis/communication-site-creation-rest)
-
-
