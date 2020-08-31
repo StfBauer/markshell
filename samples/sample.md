@@ -1,3 +1,6 @@
+**bold**
+_italic_
+~~strike through~~
 
 # spo site add
 

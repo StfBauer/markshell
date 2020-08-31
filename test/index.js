@@ -6,10 +6,10 @@ const markshell = require(process.cwd() + '/lib/index');
 
 // get default theme
 var theme =  markshell.getTheme();
-// theme.sourceCodeTheme = theme.availableSourceThemes.TOMORROW;
+theme.sourceCodeTheme = theme.availableSourceThemes.TOMORROW;
 // console.log(theme.allThemes);
 
-// console.log(Object.keys(theme));
+console.log(Object.keys(theme));
 // console.log(theme);
 
 
