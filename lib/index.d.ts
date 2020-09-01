@@ -25,7 +25,11 @@ declare function _getTheme(): {
         blockquote: number;
         definitionList: number;
     };
-    useAdmonitions: boolean;
+    admonitions: {
+        enabled: boolean;
+        beforeIndent: number;
+        afterIndent: number;
+    };
 };
 /**
  * Define a custom theme for the output
