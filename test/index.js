@@ -39,7 +39,8 @@ var theme = markshell.getTheme();
 // console.log(Object.keys(theme));
 // console.log(theme);
 
-theme.indents.definitionList = 10;
+theme.indents.definitionList = 0;
+theme.indents.blockquote = 20;
 
 // define headline format
 theme.headline = chalk.bold.keyword('lime');
