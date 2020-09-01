@@ -89,6 +89,6 @@ theme.inlineCode = chalk.bold.keyword('lightblue');
 theme.blockQuote = chalk.bold.keyword('pink');
 theme.useAdmonitions = true;
 
-// outputFile('../samples/sample.md');
-// outputFile('../samples/test.md');
+outputFile('../samples/sample.md');
+outputFile('../samples/test.md');
 outputFile('../samples/admonitions.md');
