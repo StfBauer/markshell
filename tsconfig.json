@@ -17,6 +17,7 @@
   },
   "exclude": [
     "./lib/**/*.d.ts",
-    "./lib/**/index.d.ts"
+    "./lib/**/index.d.ts",
+    "./test/"
   ]
 }

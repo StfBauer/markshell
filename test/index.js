@@ -61,7 +61,7 @@ theme.inlineCode = chalk.bold.keyword('lightblue');
 
 // define blockquote style
 theme.blockQuote = chalk.bold.keyword('pink');
-
+theme.useAdmonitions = true;
 
 outputFile('../samples/sample.md');
 outputFile('../samples/test.md');

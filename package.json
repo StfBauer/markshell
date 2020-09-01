@@ -20,7 +20,8 @@
   "homepage": "https://github.com/stfbauer/markshell#readme",
   "scripts": {
     "test": "node test/index.js",
-    "testRun": "node ./lib/index.js"
+    "testRun": "node ./lib/index.js",
+    "update-types": "./tools/typings.sh"
   },
   "files": [
     "lib"

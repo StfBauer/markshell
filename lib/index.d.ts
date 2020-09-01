@@ -25,6 +25,7 @@ declare function _getTheme(): {
         blockquote: number;
         definitionList: number;
     };
+    useAdmonitions: boolean;
 };
 /**
  * Define a custom theme for the output
@@ -40,7 +41,7 @@ declare function _toConsole(filepath: string): void;
  * Returns the raw formatted string
  * @param {string} filepath to markdown file
  */
-declare function _toRawContent(filepath: string): string;
+declare function _toRawContent(filepath: string): any;
 export declare const sourceTheme: {
     COY: string;
     DARK: string;
