@@ -52,9 +52,6 @@ styles.herbert = {
     safeStyle: chalk.bgCyanBright.bold
 };
 
-
-
-
 theme.admonitions.setStyles(styles);
 theme.admonitions.useSafeColors = true;
 
