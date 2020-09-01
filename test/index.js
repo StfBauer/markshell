@@ -33,6 +33,34 @@ const markshell = require(process.cwd() + '/lib/index');
 
 // get default theme
 var theme = markshell.getTheme();
+
+var styles = theme.admonitions.getStyles();
+
+styles.abstract.style = chalk.bgCyanBright.bold;
+styles.note.style = chalk.bgCyanBright.bold;
+styles.info.style = chalk.bgCyanBright.bold;
+styles.tip.style = chalk.bgCyanBright.bold;
+styles.success.style = chalk.bgCyanBright.bold;
+styles.success.style = chalk.bgCyanBright.bold;
+styles.warning.style = chalk.bgCyanBright.bold;
+styles.failure.style = chalk.bgCyanBright.bold;
+styles.danger.style = chalk.bgCyanBright.bold;
+styles.question.style = chalk.bgCyanBright.bold;
+styles.herbert = {
+    title: "Herbert",
+    style: chalk.bgCyanBright.bold,
+    safeStyle: chalk.bgCyanBright.bold
+};
+
+
+
+
+theme.admonitions.setStyles(styles);
+theme.admonitions.useSafeColors = true;
+
+// console.log("::::: theme.admonitions.getStyles() :::::");
+// console.log(theme.admonitions.getStyles());
+// console.log("::::: theme.admonitions.getStyles() :::::");
 // theme.sourceCodeTheme = theme.availableSourceThemes.TOMORROW;
 // console.log(theme.allThemes);
 
@@ -40,7 +68,7 @@ var theme = markshell.getTheme();
 // console.log(theme);
 
 theme.indents.definitionList = 0;
-theme.indents.blockquote = 20;
+theme.indents.blockquote = 10;
 
 // define headline format
 theme.headline = chalk.bold.keyword('lime');
