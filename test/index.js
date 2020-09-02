@@ -92,3 +92,4 @@ theme.useAdmonitions = true;
 outputFile('../samples/sample.md');
 outputFile('../samples/test.md');
 outputFile('../samples/admonitions.md');
+outputFile('../samples/another-readme.md');
