@@ -1,6 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const chalk = require('chalk');
+const { Console } = require('console');
 
 const outputFile = (file) => {
 
@@ -90,6 +91,7 @@ theme.blockQuote = chalk.bold.keyword('pink');
 theme.useAdmonitions = true;
 
 outputFile('../samples/sample.md');
+outputFile('../samples/sp-add-site.md');
 outputFile('../samples/test.md');
 outputFile('../samples/admonitions.md');
 outputFile('../samples/another-readme.md');
