@@ -1,7 +1,6 @@
 const path = require('path');
 const fs = require('fs');
 const chalk = require('chalk');
-const { Console } = require('console');
 
 const outputFile = (file) => {
 
@@ -18,7 +17,9 @@ const outputFile = (file) => {
         markshell.setTheme(theme);
 
         // print markdown file
-        markshell.toConsole(pathToFile);
+        var rawOutput = markshell.toRawContent(pathToFile);
+
+        console.log(rawOutput);
 
     } else {
 
