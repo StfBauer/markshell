@@ -1,4 +1,4 @@
-![Markshell Logo](https://raw.githubusercontent.com/StfBauer/markshell/master/assets/markshell-banner.png "Markshell Banner")
+![Markshell Logo](./assets/markshell-banner.png "Markshell Banner")
 
 # Markshell - Console output for Markdown
 
