@@ -17,6 +17,9 @@
   ],
   "main": "lib/index.js",
   "lib": "lib/index.js",
+  "bin": {
+    "markshell": "./bin/markshell.js"
+  },
   "homepage": "https://github.com/stfbauer/markshell#readme",
   "scripts": {
     "test": "node test/index.js",
@@ -24,7 +27,9 @@
     "update-types": "./tools/typings.sh"
   },
   "files": [
-    "lib"
+    "lib",
+    "bin",
+    "docs"
   ],
   "bugs": {
     "url": "https://github.com/stfbauer/markshell/issues"
