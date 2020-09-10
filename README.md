@@ -112,6 +112,21 @@ if (fs.existsSync(pathToFile)) {
 };
 ```
 
+### Use Markshell from the terminal
+
+You can install markshell as a global package too.
+
+```bash
+npm install -g markshell
+```
+
+To use markshell simply execute:
+
+```bash
+markshell ./path-to-your/markdown.md
+```
+
+
 Have fun using it!!! 🖤🖤🖤
 
 [markshell]: https://n8d.at/wp-content/uploads/2020/06/console-output.png
