@@ -63,7 +63,7 @@ if (theme !== 1) {
 if (args.length === 1) {
 
     try {
-        markshell.toRawContent(args[0]);
+        markshell.toConsole(args[0]);
     } catch (e) {
         printError(e);
     }
