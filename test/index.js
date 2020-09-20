@@ -36,7 +36,12 @@ const markshell = require(process.cwd() + '/lib/index');
 // get default theme
 var theme = markshell.getTheme();
 
-// var styles = theme.admonitions.getStyles();
+var styles = theme.admonitions.getStyles();
+styles.indent.beforeIndent = 1;
+styles.indent.afterIndent = 3;
+styles.indent.titleIndent = 2;
+
+theme.admonitions.setStyles(styles);
 
 // styles.abstract.style = chalk.bgCyanBright.bold;
 // styles.note.style = chalk.bgCyanBright.bold;
@@ -54,7 +59,7 @@ var theme = markshell.getTheme();
 //     safeStyle: chalk.bgCyanBright.bold
 // };
 
-// theme.admonitions.setStyles(styles);
+
 // theme.admonitions.useSafeColors = true;
 
 // console.log("::::: theme.admonitions.getStyles() :::::");
@@ -63,11 +68,16 @@ var theme = markshell.getTheme();
 // theme.sourceCodeTheme = theme.availableSourceThemes.TOMORROW;
 // console.log(theme.allThemes);
 
+// const theme = markshell.getTheme();
+theme.sourceCodeTheme = theme.availableSourceThemes.SOLARIZE;
+markshell.setTheme(theme);
+
 // console.log(Object.keys(theme));
 // console.log(theme);
 
 theme.indents.definitionList = 0;
 theme.indents.blockquote = 10;
+
 
 // define headline format
 theme.headline = chalk.bold.keyword('lime');
@@ -82,7 +92,7 @@ theme.italic = chalk.italic.green;
 theme.strikethrough = chalk.strikethrough.redBright;
 
 // define code output
-theme.code = chalk.bold.whiteBright;
+theme.code = chalk.bold.keyword('lime');
 
 // define inline code output
 theme.inlineCode = chalk.bold.keyword('lightblue');
@@ -91,9 +101,9 @@ theme.inlineCode = chalk.bold.keyword('lightblue');
 theme.blockQuote = chalk.bold.keyword('pink');
 theme.useAdmonitions = true;
 
-outputFile('../samples/sample.md');
-outputFile('../samples/sp-add-site.md');
-outputFile('../samples/test.md');
+// outputFile('../samples/sample.md');
+// outputFile('../samples/sp-add-site.md');
+// outputFile('../samples/test.md');
 outputFile('../samples/admonitions.md');
-outputFile('../samples/another-readme.md');
-outputFile('../samples/new-single-sample.md');
+// outputFile('../samples/another-readme.md');
+// outputFile('../samples/new-single-sample.md');

@@ -2,6 +2,7 @@
 
 const markshell = require('../lib'),
     fs = require('fs'),
+    //@ts-ignore
     pkg = require('../package.json'),
     chalk = require('chalk');
 

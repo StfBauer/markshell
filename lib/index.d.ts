@@ -7,6 +7,7 @@ declare function _getTheme(): {
     bold: import("chalk").Chalk;
     italic: import("chalk").Chalk;
     strikethrough: import("chalk").Chalk;
+    /** @deprecated Used before syntax highlighter */
     code: import("chalk").Chalk;
     inlineCode: import("chalk").Chalk;
     blockQuote: import("chalk").Chalk;
@@ -28,8 +29,6 @@ declare function _getTheme(): {
     admonitions: {
         enabled: boolean;
         useSafeColors: boolean;
-        beforeIndent: number;
-        afterIndent: number;
         getStyles: () => any;
         setStyles: (styleBlock: any) => void;
     };

@@ -1,5 +1,5 @@
 export var styles: any;
-declare function _add(content: any, beforeIdent: any, afterIndent: any, useSafeStyles?: boolean): any;
+declare function _add(content: any, beforeIdent: any, afterIndent: any, titleIndent: any, useSafeStyles?: boolean): any;
 /**
  * return current and default styles
  */
