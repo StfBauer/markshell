@@ -29,9 +29,6 @@ declare function _getTheme(): {
     admonitions: {
         enabled: boolean;
         useSafeColors: boolean;
-        beforeIndent: number;
-        afterIndent: number;
-        titleIndent: number;
         getStyles: () => any;
         setStyles: (styleBlock: any) => void;
     };
