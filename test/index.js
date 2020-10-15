@@ -105,5 +105,6 @@ theme.useAdmonitions = true;
 // outputFile('../samples/sp-add-site.md');
 // outputFile('../samples/test.md');
 outputFile('../samples/admonitions.md');
+outputFile('../samples/w32.md');
 // outputFile('../samples/another-readme.md');
 // outputFile('../samples/new-single-sample.md');
