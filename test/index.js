@@ -101,10 +101,14 @@ theme.inlineCode = chalk.bold.keyword('lightblue');
 theme.blockQuote = chalk.bold.keyword('pink');
 theme.useAdmonitions = true;
 
+theme.includePath = path.join(__dirname, '../samples/');
+
+console.log(theme.includePath);
+
 // outputFile('../samples/sample.md');
 // outputFile('../samples/sp-add-site.md');
 // outputFile('../samples/test.md');
 outputFile('../samples/admonitions.md');
-outputFile('../samples/w32.md');
+// outputFile('../samples/w32.md');
 // outputFile('../samples/another-readme.md');
 // outputFile('../samples/new-single-sample.md');

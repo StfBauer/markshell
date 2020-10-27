@@ -1,4 +1,5 @@
 {! helloworld.md !}
+--8<-- helloworld.md
 
 !!! note
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et

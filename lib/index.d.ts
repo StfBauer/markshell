@@ -32,6 +32,7 @@ declare function _getTheme(): {
         getStyles: () => any;
         setStyles: (styleBlock: any) => void;
     };
+    includePath: any;
 };
 /**
  * Define a custom theme for the output
