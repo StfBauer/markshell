@@ -42,6 +42,7 @@ styles.indent.afterIndent = 3;
 styles.indent.titleIndent = 2;
 
 theme.admonitions.setStyles(styles);
+console.log(theme);
 
 // styles.abstract.style = chalk.bgCyanBright.bold;
 // styles.note.style = chalk.bgCyanBright.bold;
