@@ -112,4 +112,5 @@ console.log(theme.includePath);
 // outputFile('../samples/w32.md');
 // outputFile('../samples/another-readme.md');
 // outputFile('../samples/new-single-sample.md');
-outputFile('../samples/login.md');
+// outputFile('../samples/login.md');
+outputFile('../samples/site-list.md');
