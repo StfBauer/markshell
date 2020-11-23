@@ -42,7 +42,9 @@ styles.indent.afterIndent = 3;
 styles.indent.titleIndent = 2;
 
 theme.admonitions.setStyles(styles);
-console.log(theme);
+console.log(theme.indents);
+
+theme.indents.definitionList = 2;
 
 // styles.abstract.style = chalk.bgCyanBright.bold;
 // styles.note.style = chalk.bgCyanBright.bold;
@@ -76,7 +78,7 @@ markshell.setTheme(theme);
 // console.log(Object.keys(theme));
 // console.log(theme);
 
-theme.indents.definitionList = 0;
+// theme.indents.definitionList = 0;
 theme.indents.blockquote = 10;
 
 
@@ -104,7 +106,7 @@ theme.useAdmonitions = true;
 
 theme.includePath = path.join(__dirname, '../samples/');
 
-console.log(theme.includePath);
+// console.log(theme.includePath);
 
 // outputFile('../samples/sample.md');
 // outputFile('../samples/sp-add-site.md');
