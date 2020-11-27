@@ -8,9 +8,10 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
+            "trace": true,
+            // "skipFiles": [
+            //     "<node_internals>/**"
+            // ],
             "program": "${workspaceFolder}/test/index.js"
         }
     ]

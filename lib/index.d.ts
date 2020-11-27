@@ -3,15 +3,15 @@ export var _theme: any;
  * Returns the default theme
  */
 declare function _getTheme(): {
-    headline: import("chalk").Chalk;
-    bold: import("chalk").Chalk;
-    italic: import("chalk").Chalk;
-    strikethrough: import("chalk").Chalk;
+    headline: chalk.Chalk;
+    bold: chalk.Chalk;
+    italic: chalk.Chalk;
+    strikethrough: chalk.Chalk;
     /** @deprecated Used before syntax highlighter */
-    code: import("chalk").Chalk;
-    inlineCode: import("chalk").Chalk;
-    blockQuote: import("chalk").Chalk;
-    sourceCodeTheme: string;
+    code: chalk.Chalk;
+    inlineCode: chalk.Chalk;
+    blockQuote: chalk.Chalk;
+    sourceCodeTheme: any;
     availableSourceThemes: {
         COY: string;
         DARK: string;
@@ -49,6 +49,7 @@ declare function _toConsole(filepath: string): void;
  * @param {string} filepath to markdown file
  */
 declare function _toRawContent(filepath: string): any;
+import chalk = require("chalk");
 export declare const sourceTheme: {
     COY: string;
     DARK: string;
