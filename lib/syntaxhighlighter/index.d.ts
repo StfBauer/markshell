@@ -16,4 +16,4 @@ declare namespace sourceTheme {
     const TOMORROW: string;
     const TWILIGHT: string;
 }
-export { _highlight as highlight, sourceTheme as themeBlaBla, sourceTheme as availableThemes };
+export { _highlight as highlight, sourceTheme as themes, sourceTheme as availableThemes };

@@ -10,7 +10,9 @@ const outputFile = (file) => {
     );
 
     console.log('Trying to get file :::', pathToFile);
+    console.log('/---/// TESTING DESIGN');
     console.log('');
+    console.log('/---/// OUTPUT');
 
     if (fs.existsSync(pathToFile)) {
 
@@ -69,11 +71,11 @@ theme.indents.definitionList = 2;
 // console.log("::::: theme.admonitions.getStyles() :::::");
 // console.log(theme.admonitions.getStyles());
 // console.log("::::: theme.admonitions.getStyles() :::::");
-// theme.sourceCodeTheme = theme.availableSourceThemes.TOMORROW;
+theme.sourceCodeTheme = theme.availableSourceThemes.TOMORROW;
 // console.log(theme.allThemes);
 
 // const theme = markshell.getTheme();
-theme.sourceCodeTheme = theme.availableSourceThemes.SOLARIZE;
+// theme.sourceCodeTheme = theme.availableSourceThemes.FUNKY;
 markshell.setTheme(theme);
 
 // console.log(Object.keys(theme));
@@ -108,10 +110,12 @@ theme.useAdmonitions = true;
 theme.includePath = path.join(__dirname, '../samples/');
 
 // console.log(theme.includePath);
-console.log('/---/// TESTING DESIGN');
-console.log('/---/// OUTPUT');
 // outputFile('../samples/sample.md');
+// theme.sourceCodeTheme = theme.availableSourceThemes.SOLARIZE;
+// markshell.setTheme(theme);
 // outputFile('../samples/sp-add-site.md');
+// theme.sourceCodeTheme = theme.availableSourceThemes.OKAIDIA;
+// markshell.setTheme(theme);
 // outputFile('../samples/test.md');
 // outputFile('../samples/admonitions.md');
 // outputFile('../samples/w32.md');

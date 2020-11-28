@@ -11,7 +11,7 @@ declare function _getTheme(): {
     code: chalk.Chalk;
     inlineCode: chalk.Chalk;
     blockQuote: chalk.Chalk;
-    sourceCodeTheme: any;
+    sourceCodeTheme: string;
     availableSourceThemes: {
         COY: string;
         DARK: string;
