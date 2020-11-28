@@ -1,3 +1,4 @@
+console.log('/---/// TESTING DESIGN');
 const path = require('path');
 const fs = require('fs');
 const chalk = require('chalk');
@@ -107,7 +108,8 @@ theme.useAdmonitions = true;
 theme.includePath = path.join(__dirname, '../samples/');
 
 // console.log(theme.includePath);
-
+console.log('/---/// TESTING DESIGN');
+console.log('/---/// OUTPUT');
 // outputFile('../samples/sample.md');
 // outputFile('../samples/sp-add-site.md');
 // outputFile('../samples/test.md');
@@ -117,3 +119,4 @@ theme.includePath = path.join(__dirname, '../samples/');
 // outputFile('../samples/new-single-sample.md');
 // outputFile('../samples/login.md');
 outputFile('../samples/site-list.md');
+console.log('/---/// OUTPUT');

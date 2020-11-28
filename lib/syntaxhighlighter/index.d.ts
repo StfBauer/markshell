@@ -1,4 +1,3 @@
-export type sourceTheme = string;
 /**
  *
  * @param {string} source
@@ -6,7 +5,8 @@ export type sourceTheme = string;
  * @param {sourceTheme} outTheme
  */
 declare function _highlight(source: string, language: string, outTheme: sourceTheme): string;
-export namespace sourceTheme {
+type sourceTheme = string;
+declare namespace sourceTheme {
     const COY: string;
     const DARK: string;
     const FUNKY: string;
@@ -16,4 +16,4 @@ export namespace sourceTheme {
     const TOMORROW: string;
     const TWILIGHT: string;
 }
-export { _highlight as highlight, sourceTheme as themes, sourceTheme as availableThemes };
+export { _highlight as highlight, sourceTheme as themeBlaBla, sourceTheme as availableThemes };
