@@ -3,6 +3,8 @@ const path = require('path');
 const fs = require('fs');
 const chalk = require('chalk');
 
+const markshell = require(process.cwd() + '/lib/index');
+
 const outputFile = (file) => {
 
     const pathToFile = path.join(__dirname,
@@ -33,8 +35,6 @@ const outputFile = (file) => {
     }
 
 }
-
-const markshell = require(process.cwd() + '/lib/index');
 
 // get default theme
 var theme = markshell.getTheme();
