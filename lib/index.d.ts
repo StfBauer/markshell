@@ -16,7 +16,7 @@ declare function _getTheme(): {
         COY: string;
         DARK: string;
         FUNKY: string;
-        OKADIDO: string;
+        OKAIDIA: string;
         PRISM: string;
         SOLARIZE: string;
         TOMORROW: string;
@@ -54,7 +54,7 @@ export declare const sourceTheme: {
     COY: string;
     DARK: string;
     FUNKY: string;
-    OKADIDO: string;
+    OKAIDIA: string;
     PRISM: string;
     SOLARIZE: string;
     TOMORROW: string;

@@ -1,3 +1,5 @@
+export var theme: any;
+export var themeTokenKeys: string[];
 /**
  *
  * @param {string} source
@@ -10,7 +12,7 @@ declare namespace sourceTheme {
     const COY: string;
     const DARK: string;
     const FUNKY: string;
-    const OKADIDO: string;
+    const OKAIDIA: string;
     const PRISM: string;
     const SOLARIZE: string;
     const TOMORROW: string;
