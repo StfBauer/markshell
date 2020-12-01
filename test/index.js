@@ -122,5 +122,6 @@ theme.includePath = path.join(__dirname, '../samples/');
 // outputFile('../samples/another-readme.md');
 // outputFile('../samples/new-single-sample.md');
 // outputFile('../samples/login.md');
-outputFile('../samples/site-list.md');
+// outputFile('../samples/site-list.md');
+outputFile('../samples/bug-samples.md');
 console.log('/---/// OUTPUT');
