@@ -38,10 +38,10 @@
   "license": "MIT",
   "dependencies": {
     "@types/node": "^10.17.28",
-    "@types/prismjs": "^1.16.1",
-    "chalk": "^4.1.0",
+    "@types/prismjs": "1.16",
+    "chalk": "^4.1.2",
     "jsdom": "^16.4.0",
-    "prismjs": "^1.21.0",
+    "prismjs": "^1.25.0",
     "wrap-ansi": "^7.0.0"
   },
   "repository": {
