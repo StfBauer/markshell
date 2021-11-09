@@ -126,6 +126,9 @@ To use markshell simply execute:
 markshell ./path-to-your/markdown.md
 ```
 
+### Used by
+
+[![Microsoft CLI](https://n8d.at/wp-content/uploads/2021/11/pnp-microsoft-365-cli-black-300.png "Microsoft CLI")](https://pnp.github.io/cli-microsoft365/)
 
 Have fun using it!!! 🖤🖤🖤
 
