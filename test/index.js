@@ -86,7 +86,7 @@ theme.indents.blockquote = 10;
 
 
 // define headline format
-theme.headline = chalk.bold.keyword('lime');
+theme.headline = chalk.keyword('yellow').bold;
 
 // define bold text layout
 theme.bold = chalk.bold.keyword('white');
