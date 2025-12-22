@@ -51,9 +51,9 @@
   "devDependencies": {
     "@types/node": "^24.10.2",
     "@types/prismjs": "^1.16.1",
-    "@vitest/coverage-v8": "^1.6.1",
-    "@vitest/ui": "^1.0.0",
-    "vitest": "^1.0.0"
+    "@vitest/coverage-v8": "^4.0.16",
+    "@vitest/ui": "^4.0.16",
+    "vitest": "^4.0.16"
   },
   "repository": {
     "type": "git",
