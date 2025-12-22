@@ -106,3 +106,9 @@ dist
 # Remove npm rc
 .npmrc
 .DS_Store
+
+# Debug and temporary test files
+debug-*.js
+test-*.js
+test-*.md
+!test/

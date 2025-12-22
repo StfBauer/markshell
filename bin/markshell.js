@@ -36,6 +36,51 @@ if (args.length === 0 || args.indexOf('--help') !== -1) {
     printHelp();
 }
 
+// Handle --example flag to run interactive demos
+const exampleIdx = args.indexOf('--example');
+if (exampleIdx !== -1) {
+    const path = require('path');
+    const exampleName = args[exampleIdx + 1];
+
+    const examples = {
+        'dynamic-loading': path.join(__dirname, '../examples/dynamic-loading-demo.js'),
+        'syntax-colors': path.join(__dirname, '../examples/syntax-colors-demo.js'),
+        'demo': path.join(__dirname, '../DEMO.md')
+    };
+
+    if (!exampleName || !examples[exampleName]) {
+        console.log(`Markshell - Version ${pkg.version}
+
+${chalk.yellow.bold('Available examples:')}
+
+  ${chalk.cyan('markshell --example dynamic-loading')}
+    Interactive demo showing dynamic language loading with statistics
+
+  ${chalk.cyan('markshell --example syntax-colors')}
+    Visual demonstration of syntax highlighting colors
+
+  ${chalk.cyan('markshell --example demo')}
+    Comprehensive demo showcasing all markdown features and 25+ languages
+`);
+        process.exit(0);
+    }
+
+    const examplePath = examples[exampleName];
+
+    if (exampleName === 'demo') {
+        // Render the DEMO.md file
+        try {
+            markshell.toConsole(examplePath);
+        } catch (e) {
+            printError(e);
+        }
+    } else {
+        // Execute the example script
+        require(examplePath);
+    }
+    process.exit(0);
+}
+
 const theme = args.indexOf('--theme');
 
 if (theme !== 1) {
